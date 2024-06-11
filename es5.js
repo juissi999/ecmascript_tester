@@ -9,3 +9,5 @@ function test_es5(elId) {
     elId.innerHTML = 'es 5 does not work.'
   }
 }
+
+test_es5(es5)
