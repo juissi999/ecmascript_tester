@@ -32,8 +32,10 @@
    <div id="es13"></div>
    <div id="es14"></div>
 
+   <script src="es5.js"></script>
+
    <script>
-    es5 = document.getElementById("es5")
+
     es6 = document.getElementById("es6")
     es7 = document.getElementById("es7")
     es8 = document.getElementById("es8")
@@ -44,16 +46,7 @@
     es13 = document.getElementById("es13")
     es14 = document.getElementById("es14")
 
-    function test_es5(elId) {
-        try {
-            var a = " test "
-            var b = a.trim()
-            elId.innerHTML = "es 5 works!"
-        } catch (error) {
-            elId.innerHTML = "es 5 does not work."
-            
-        }
-    }
+
 
     function test_es6(elId) {
         try {
