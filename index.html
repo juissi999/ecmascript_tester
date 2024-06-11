@@ -33,140 +33,15 @@
    <div id="es14"></div>
 
    <script src="es5.js"></script>
+   <script src="es6.js"></script>
+   <script src="es7.js"></script>
+   <script src="es8.js"></script>
+   <script src="es9.js"></script>
+   <script src="es10.js"></script>
+   <script src="es11.js"></script>
+   <script src="es12.js"></script>
+   <script src="es13.js"></script>
+   <script src="es14.js"></script>
 
-   <script>
-
-    es6 = document.getElementById("es6")
-    es7 = document.getElementById("es7")
-    es8 = document.getElementById("es8")
-    es9 = document.getElementById("es9")
-    es10 = document.getElementById("es10")
-    es11 = document.getElementById("es11")
-    es12 = document.getElementById("es12")
-    es13 = document.getElementById("es13")
-    es14 = document.getElementById("es14")
-
-
-
-    function test_es6(elId) {
-        try {
-            const a = "test"
-            elId.innerHTML = "es 6 works!"
-        } catch (error) {
-            elId.innerHTML = "es 6 does not work."
-            
-        }
-    }
-
-    function test_es7(elId) {
-        try {
-            const array1 = [1, 2, 3]
-            const test = array1.includes(2)
-            elId.innerHTML = "es 7 works!"
-        } catch (error) {
-            elId.innerHTML = "es 7 does not work."
-            
-        }
-    }
-
-    function test_es8(elId) {
-        try {
-            const object1 = {
-                a: 'string1',
-                b: 42,
-                c: false,
-            }
-
-            const b = Object.values(object1)
-            elId.innerHTML = "es 8 works!"
-        } catch (error) {
-            elId.innerHTML = "es 8 does not work."
-            
-        }
-    }
-
-    function test_es9(elId) {
-        try {
-            const object2 = {
-                a: 'string1',
-                b: 42,
-                c: false,
-            }
-
-            let objectClone = {...object2}
-            elId.innerHTML = "es 9 works!"
-        } catch (error) {
-            elId.innerHTML = "es 9 does not work."
-        }
-    }
-
-    function test_es10(elId) {
-        try {
-            const arr1 = [0, 1, 2, [3, 4]];
-
-            let flattedArr1 = arr1.flat();
-
-            elId.innerHTML = "es 10 works!"
-        } catch (error) {
-            elId.innerHTML = "es 10 does not work."
-        }
-    }
-
-    function test_es11(elId) {
-        try {
-            nullishCoalescingOperator = undefined ?? "string"
-
-            elId.innerHTML = "es 11 works!"
-        } catch (error) {
-            elId.innerHTML = "es 11 does not work."
-        }
-    }
-
-    function test_es12(elId) {
-        try {
-            let text = "I like chocolate."
-            text = text.replaceAll("chocolate","juice");
-            elId.innerHTML = "es 12 works!"
-        } catch (error) {
-            elId.innerHTML = "es 12 does not work."
-        }
-    }
-
-    function test_es13(elId) {
-        try {
-            const object1 = {
-                prop: 'test',
-            };
-            let hasOwnTest = Object.hasOwn(object1, 'prop');
-
-            elId.innerHTML = "es 13 works!"
-        } catch (error) {
-            elId.innerHTML = "es 13 does not work."
-        }
-    }
-
-    function test_es14(elId) {
-        try {
-            const array1 = [5, 12, 50, 130, 44];
-            const isLargeNumber = (element) => element > 45;
-            let findLastIndexTest = array1.findLastIndex(isLargeNumber);
-
-            elId.innerHTML = "es 14 works!"
-        } catch (error) {
-            elId.innerHTML = "es 14 does not work."
-        }
-    }
-
-
-    test_es6(es6)
-    test_es7(es7)
-    test_es8(es8)
-    test_es9(es9)
-    test_es10(es10)
-    test_es11(es11)
-    test_es12(es12)
-    test_es13(es13)
-    test_es14(es14)
-   </script>
 </body>
 </html>
